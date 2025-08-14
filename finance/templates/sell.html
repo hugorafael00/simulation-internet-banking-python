@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+
+    <form action="/sell" method="post">
+        <input autocomplete="off" autofocus class="form-control" name="stock" placeholder="Stock" type="text"></input><br>
+        <input autocomplete="off" autofocus class="form-control" name="quantity" placeholder="Quantity" type="number"></input><br>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+    <p> {{ mensagem }} </p>
+
+{% endblock %}

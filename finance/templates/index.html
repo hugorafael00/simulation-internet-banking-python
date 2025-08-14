@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    index
+{% endblock %}
+
+{% block main %}
+    <h1>Stocks</h1>
+    <h4>Your cash: {{ ala }}</h4>
+    <table style="width:100%" align=center>
+        <tr>
+            <th>Name</th>
+            <th style="width:30%">Price</th>
+            <th style="width:30%">Symbol</th>
+            <th>Amount</th>
+            <!-- <th>ala</th> -->
+            <!-- Adicione mais colunas conforme seu modelo -->
+        </tr>
+        <p>{{ a }}</p>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.name }}</td>
+            <td>{{ row.sprice }}</td>
+            <td>{{ row.symbol }}</td>
+            <td>{{ row.amount }}</td>
+            <td>{{ ala.price }}</td>
+            <!-- Renderize mais colunas conforme seu modelo -->
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

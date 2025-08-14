@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <h1>Stocks</h1>
+    <table style="width:100%" align=center>
+        <tr>
+            <th>Name</th>
+            <th style="width:30%">Price</th>
+            <th style="width:30%">Symbol</th>
+            <th>Result</th>
+            <th>Type</th>
+            <th>Id</th>
+            <!-- Adicione mais colunas conforme seu modelo -->
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.name }}</td>
+            <td>{{ row.price }}</td>
+            <td>{{ row.symbol }}</td>
+            <td>{{ row.result }}</td>
+            <td>{{ row.tipe }}</td>
+            <td>{{ row.id }}</td>
+            <!-- Renderize mais colunas conforme seu modelo -->
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
