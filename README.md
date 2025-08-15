@@ -21,3 +21,7 @@ Inclui funcionalidades core como cadastro de conta, consulta de saldo, depósito
 - Exibição de histórico de transações por usuário
 
 ---
+
+## Homepage
+
+<img width="989" height="513" alt="image" src="https://github.com/user-attachments/assets/243acfab-1dc1-4c76-a6d8-dae8f29c159d" />
